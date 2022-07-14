@@ -5,6 +5,6 @@ module.exports = {
   ],
   clearMocks: true,
   testEnvironment: `node`,
-  watchPathIgnorePatterns: [ `node_modules` ],
-  testPathIgnorePatterns: [ `node_modules` ],
+  watchPathIgnorePatterns: [`node_modules`],
+  testPathIgnorePatterns: [`node_modules`],
 };
