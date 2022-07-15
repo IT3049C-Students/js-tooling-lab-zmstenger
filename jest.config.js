@@ -7,4 +7,7 @@ module.exports = {
   testEnvironment: `node`,
   watchPathIgnorePatterns: [`node_modules`],
   testPathIgnorePatterns: [`node_modules`],
+  transform: {
+    "^.+\\.[t|j]sx?$": `babel-jest`
+  }
 };

@@ -15,7 +15,7 @@ describe('Rock Paper Scissors', ()=>{
       .select('rock')
     // Press Go
     cy.get('.btn-success').click()
-    //cy.get()
+    cy.should()
 
     })
     
