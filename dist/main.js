@@ -65,7 +65,7 @@
       e.preventDefault();
         m.play(r.value.toLowerCase());
         (c.textContent = "");
-        (c.textContent = `${m.username}: ${m.score.user} vs CPU: ${m.score.cpu}`.toString());
+        (c.textContent = `${m.username}: ${m.score.user} vs CPU: ${m.score.cpu}\nTries: ${m.gameHistoryLog.length}`.toString());
         (a.textContent = new String());
         (a.textContent = (m.gameHistoryLog+"").split(", "));
     });
