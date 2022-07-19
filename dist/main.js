@@ -1,5 +1,4 @@
 (() => {
-  "use strict";
   class e {
     constructor(e) {
       (this.username = e);
@@ -68,6 +67,6 @@
         (c.textContent = "");
         (c.textContent = `${m.username}: ${m.score.user} vs CPU: ${m.score.cpu}`.toString());
         (a.textContent = new String());
-        (a.textContent = m.gameHistoryLog.split(", "));
+        (a.textContent = (m.gameHistoryLog+"").split(", "));
     });
 })();

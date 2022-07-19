@@ -10,12 +10,13 @@ describe('Rock Paper Scissors', ()=>{
     // Type Name
     cy.get('.form-control')
       .type('Zachary Stenger')
+    // Press Start Button
+    cy.get('.btn-primary').click()
     // Select Choice
     cy.get('.custom-select')
-      .select('rock')
+      .select('Rock')
     // Press Go
     cy.get('.btn-success').click()
-    cy.should()
 
     })
     
