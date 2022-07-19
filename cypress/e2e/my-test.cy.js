@@ -1,4 +1,4 @@
-/// <reference types="cypress" />
+
 
 
 describe('Rock Paper Scissors', ()=>{
@@ -17,7 +17,10 @@ describe('Rock Paper Scissors', ()=>{
       .select('Rock')
     // Press Go
     cy.get('.btn-success').click()
-
+    // Name equals Zachary Stenger
+    cy.get('#game-history').should('contain.text', 'Zachary Stenger')
+    // Number of tries should equal 1
+    cy.get('#score').should('contain.text,', 'Tries: 1')
     })
     
   })
