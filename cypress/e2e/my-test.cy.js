@@ -20,7 +20,7 @@ describe('Rock Paper Scissors', ()=>{
     // Name equals Zachary Stenger
     cy.get('#game-history').should('contain.text', 'Zachary Stenger')
     // Number of tries should equal 1
-    cy.get('#score').should('contain.text,', 'Tries: 1')
+    cy.get('#score').should('contain.text', 'Tries: 1')
     })
     
   })
